@@ -1,0 +1,149 @@
+{% extends 'Trainingzone/base.html' %}
+{% load static %}
+
+
+{% block titulo %}
+    <span style="color: black;">Bienvenidos a los cursos</span>
+{% endblock titulo %}
+
+
+
+{% block contenido %}
+    <div class="professor-card">
+        <div class="professor-image">
+            <img src="{% static 'Trainingzone/assets/img/PROFE1.jpg' %}" alt="Foto del Profesor" style="width: 200px;">
+        </div>
+        <div class="professor-details">
+            <h1>Nicolas guayta</h1>
+            <div class="professor-description">
+                <p>
+                    • Personal Trainer Certificado y Experto en Fitness
+                </p>
+                <p>
+                    • Educación, Experiencia y Éxito
+                </p>
+                <p>
+                    Como un Personal Trainer certificado y apasionado, mi compromiso principal es brindarte un enfoque basado en la educación y el conocimiento en el mundo del fitness. Mi trayectoria incluye una sólida formación académica y experiencia práctica, lo que me permite ofrecerte una guía integral hacia una vida más saludable y en forma.
+                </p>
+                
+                <ul>
+                    <li>
+                        **Educación y Formación**
+                    </li>
+                    <li>
+                        • Licenciatura en Ciencias del Deporte: Comencé mi viaje educativo con una licenciatura en Ciencias del Deporte, donde adquirí un profundo conocimiento de la anatomía, fisiología y biomecánica del cuerpo humano.
+                    </li>
+                    <li>
+                        • Certificaciones de Entrenador Personal: He obtenido múltiples certificaciones reconocidas en el campo del fitness, que incluyen entrenamiento de fuerza, entrenamiento cardiovascular, nutrición deportiva y más.
+                    </li>
+                    <li>
+                        • Educación Continua: Mi compromiso con la educación continua significa que siempre estoy al tanto de las últimas investigaciones y tendencias en salud y acondicionamiento físico. Participar en talleres y cursos me permite brindarte las estrategias más efectivas y basadas en evidencia.
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li>
+                        **Experiencia Probada**
+                    </li>
+                    <li>
+                        • Con una amplia experiencia trabajando con clientes de todas las edades y niveles de condición física, he ayudado a individuos a alcanzar una variedad de objetivos, desde la pérdida de peso y la ganancia de fuerza hasta la mejora del rendimiento deportivo.
+                    </li>
+                    <li>
+                        • Mi enfoque se basa en la planificación personalizada de entrenamientos y dietas, adaptada a tus metas específicas y necesidades individuales.
+                    </li>
+                </ul>
+                
+                <p>
+                    **Por Qué Elegirme**
+                </p>
+                <ul>
+                    <li>
+                        • Mi profundo conocimiento en anatomía y fisiología me permite crear programas de entrenamiento seguros y efectivos.
+                    </li>
+                    <li>
+                        • Mi enfoque basado en la evidencia garantiza que recibirás asesoramiento respaldado por la ciencia y estrategias probadas.
+                    </li>
+                    <li>
+                        • Mi pasión por la salud y el bienestar me impulsa a mantenerte motivado y comprometido con tus objetivos de fitness.
+                    </li>
+                    <li>
+                        • Mi objetivo es empoderarte con el conocimiento y las habilidades necesarias para mantener un estilo de vida saludable a largo plazo.
+                    </li>
+                </ul>
+                
+                <p>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <style>
+        .professor-card {
+            display: flex;
+            align-items: center; /* Para centrar verticalmente */
+            background-color: black; /* Fondo negro */
+            color: white; /* Texto blanco */
+            padding: 20px; /* Espacio interno para el contenido */
+            border-radius: px; /* Borde redondeado para la tarjeta */
+        }
+
+        .professor-image {
+            flex: 0 0 auto; /* Tamaño automático para la imagen */
+            margin-right: 20px; /* Espacio entre la imagen y la descripción */
+        }
+
+        .professor-description {
+            background-color: grey; /* Fondo semitransparente negro */
+            color: black; /* Texto blanco */
+            padding: 10px; /* Espacio interno para la descripción */
+            border-radius: 5px; /* Borde redondeado para la tarjeta de descripción */
+        }
+        <div class="professor-card">
+        <div class="professor-image">
+            <img src="{% static 'Trainingzone/assets/img/PROFE1.jpg' %}" alt="Foto del Profesor" style="width: 200px;">
+        </div>
+        <div class="professor-details">
+            <h1>Nombre del Profesor</h1>
+            <div class="professor-description">
+              &bull; Rutina y planificación individualizada<br>
+                        &bull; Dieta individualizada<br>
+                        &bull; Recetario<br>
+                        &bull; Material exclusivo<br>
+                        &bull; Resolución de dudas en 24hs<br>
+                        &bull; Constante comunicación vía Mail<br>
+                        &bull; Revisiones semanales y ajustes sin límite
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <style>
+        .professor-card {
+            display: flex;
+            align-items: center; /* Para centrar verticalmente */
+            background-color: black; /* Fondo negro */
+            color: white; /* Texto blanco */
+            padding: 20px; /* Espacio interno para el contenido */
+            border-radius: px; /* Borde redondeado para la tarjeta */
+        }
+
+        .professor-image {
+            flex: 0 0 auto; /* Tamaño automático para la imagen */
+            margin-right: 20px; /* Espacio entre la imagen y la descripción */
+        }
+
+        .professor-description {
+            background-color: grey; /* Fondo semitransparente negro */
+            color: black; /* Texto blanco */
+            padding: 10px; /* Espacio interno para la descripción */
+            border-radius: 5px; /* Borde redondeado para la tarjeta de descripción */
+        }
+    </style>
+{% endblock contenido %}
+
+
+
+
+
+
+

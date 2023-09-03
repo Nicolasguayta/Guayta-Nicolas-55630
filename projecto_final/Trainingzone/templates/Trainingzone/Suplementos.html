@@ -1,0 +1,91 @@
+{% extends 'Trainingzone/base.html' %}
+{% load static %}
+
+{% block titulo %}
+    <span style="color: black;">Suplmentos!!</span>
+{% endblock titulo %}
+
+{% block contenido %}
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+    
+    <h4 class="text-white">Cursos</h4>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card" style="background-image: url('{% static 'Trainingzone/assets/img/PROTE1.jpg' %}'); background-size: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Proteina</h5>
+                    <ul class="list-unstyled text-white">
+                        <li>&bull; Desarrollo muscular.</li>
+                        <li><br></li> <!-- Espacio en blanco para separar los elementos -->
+                        <li>&bull; Recuperación rápida.</li>
+                        <li><br></li> <!-- Espacio en blanco para separar los elementos -->
+                        <li>&bull; Sensación de saciedad.</li>
+                        <li><br></li> <!-- Espacio en blanco para separar los elementos -->
+                        <li>&bull; Mejora de la composición corporal.</li>
+                        <li><br></li> <!-- Espacio en blanco para separar los elementos -->
+                        <li>&bull; Salud ósea.</li>
+                     
+                    </p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="background-image: url('{% static 'Trainingzone/assets/img/CREATINA1.jpg' %}'); background-size: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Creatina</h5>
+                    <ul class="list-unstyled text-white">
+                    <li>&bull; Aumento de la fuerza y potencia muscular.</li>
+                    <li><br></li> <!-- Espacio en blanco para separar los elementos -->
+                    <li>&bull; Mayor capacidad para entrenar a alta intensidad.</li>
+                    <li><br></li> <!-- Espacio en blanco para separar los elementos -->
+                    <li>&bull; Mejora en la recuperación muscular.</li>
+                    <li><br></li> <!-- Espacio en blanco para separar los elementos -->
+                    <li>&bull; Aumento en la masa muscular magra.</li>
+                    <li><br></li> <!-- Espacio en blanco para separar los elementos -->
+                    <li>&bull; Ayuda en la prevención de lesiones deportivas.</li>
+                    <a href="#" class="btn btn-primary">Comprar</a>                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="background-image: url('{% static 'Trainingzone/assets/img/PREE 2.jpg' %}'); background-size: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Comprar</h5>
+                    <ul class="list-unstyled text-white">
+                    <li>&bull; Aumento de la energía y la concentración antes del entrenamiento.</li>
+                    <li>&bull; Mayor resistencia y capacidad para entrenar a alta intensidad.</li>
+                    <li>&bull; Reducción de la fatiga muscular y mejor recuperación después del entrenamiento.</li>
+                    <li>&bull; Estimulación del estado de alerta y enfoque mental.</li>
+                    <li>&bull; Mejora del rendimiento deportivo y capacidad de trabajo.</li>
+                    <li><br></li> <!-- Espacio en blanco para separar los elementos -->
+                    <li>&bull; Mayor motivación y disposición para entrenar duro.</li>                    
+                    </p>
+                    <a href="#" class="btn btn-primary">Más detalles</a>                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="background-image: url('{% static 'Trainingzone/assets/img/glutamina1.jpg' %}'); background-size: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Glutamina</h5>
+                    <ul class="list-unstyled text-white">
+                    <li>&bull; Apoyo a la recuperación muscular después del ejercicio intenso.</li>
+                    <li>&bull; Mejora de la salud intestinal y función digestiva.</li>
+                    <li>&bull; Fortalecimiento del sistema inmunológico.</li>
+                    <li>&bull; Reducción de la fatiga y el sobreentrenamiento.</li>
+                    <li>&bull; Apoyo a la síntesis de proteínas musculares.</li>
+                    <li>&bull; Ayuda en la preservación de la masa muscular durante la pérdida de peso.</li>
+                    <li>&bull; Contribución a la salud del sistema nervioso central.</li>                    
+                    </p>
+                    <a href="#" class="btn btn-primary">Comprar</a>                    
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock contenido %}
