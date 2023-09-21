@@ -1,0 +1,47 @@
+{% extends 'Trainingzone/base.html' %}
+{% load static %}
+
+{% block titulo %}
+    <span style="color: black;">Asesorados</span>
+{% endblock titulo %}
+
+{% block contenido %}
+    <div style="margin-bottom: 10px;">
+        <a href="{% url 'create_asesorado' %}" class="btn btn-success">
+            <i class="fa fa-plus-circle"></i> Agregar Asesorados
+        </a>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for asesorado in asesorados %}
+                <tr>
+                    <td>{{ asesorado.id }}</td>
+                    <td>{{ asesorado.nombre }}</td>
+                    <td>{{ asesorado.email }}</td>
+                    <td>
+                        <a href="{% url 'update_asesorado' asesorado.id %}" class="btn btn-primary btn-sm" style="margin-right: 5px;">
+                            <i class="fa fa-edit fa-sm" title="Editar"></i>
+                        </a>
+                        <a href="{% url 'asesorado_delete' asesorado.id %}" class="btn btn-danger btn-sm">
+                            <i class="fa fa-trash fa-sm" title="Borrar"></i>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="container mt-5">
+        <div class="alert alert-warning" role="alert">
+            <h4 class="alert-heading">Próximamente</h4>
+            <p>Estamos trabajando en esta sección y estará disponible pronto. ¡Mantente atento!</p>
+        </div>
+    </div>
+{% endblock contenido %}

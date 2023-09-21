@@ -1,0 +1,33 @@
+{% extends 'Trainingzone/base.html' %}
+{% load static %}
+
+{% block titulo %}
+   Compras
+{% endblock titulo %}
+
+{% block contenido %}
+    <style>
+        /* Estilos personalizados para el fondo negro y el mensaje más grande */
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .mensaje-fuera-de-servicio {
+            font-size: 24px; /* Tamaño de fuente más grande */
+        }
+    </style>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+                <div class="alert alert-warning mensaje-fuera-de-servicio" role="alert">
+                    <h4 class="alert-heading">Fuera de Servicio</h4>
+                    <p>Las compras están desactivadas en este momento.</p>
+                    <hr>
+                    <p class="mb-0">Lamentamos los inconvenientes. Por favor, inténtelo de nuevo más tarde.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock contenido %}
+
